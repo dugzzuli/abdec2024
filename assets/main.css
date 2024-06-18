@@ -147,3 +147,27 @@ footer{font-size:0.875em; margin-top:5em; text-align:center;}
     table.list{font-size: 0.5em;}
     td.note{font-size: 1em;}
 }
+
+
+.imgbanner{
+    width:100%;
+}
+.images-side-by-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.side-image_sun {
+    width: 50%;
+    height: auto;
+    max-width: 300px;
+}
+
+
+.side-image_earth {
+    width: 50%;
+    height: auto;
+    max-width: 300px;
+}
