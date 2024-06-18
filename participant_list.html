@@ -10,6 +10,7 @@
     <meta name="resource-type" content="document">
     <meta name="distribution" content="global">
     <meta name="KeyWords" content="Conference">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
     <title>高分辨率光谱 <- 天文大数据研讨班第二期</title>
   </head>
   <body>
@@ -62,8 +63,8 @@
   }
   
   results.data.forEach((row, index) => {
-    const firstName = capitalizeFirstLetter(row['Given/First Name(s)']);
-    const lastName = capitalizeFirstLetter(row['Family/Last Name']);
+    const firstName = capitalizeFirstLetter(row['Name']);
+    const lastName = capitalizeFirstLetter(row['Ins']);
     const currentRowContent = (firstName + ' ' + lastName).toLowerCase();
   
     if (currentRowContent !== previousRowContent) {
